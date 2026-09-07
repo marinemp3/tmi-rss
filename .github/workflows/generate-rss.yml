@@ -1,0 +1,54 @@
+name: Generate RSS Feed
+
+on:
+  schedule:
+    # 中国時間 13:30 = UTC 5:30（中国はUTC+8）
+    - cron: '30 5 * * 1'
+  workflow_dispatch:  # 手動実行も可能に
+
+# 権限の設定（重要！）
+permissions:
+  contents: write  # リポジトリへの書き込み権限
+
+jobs:
+  generate-rss:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # プッシュに必要な設定
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install feedgen beautifulsoup4 requests
+          
+      - name: Run RSS generation script
+        run: python generate_rss.py
+        
+      - name: Commit and push if changed
+        run: |
+          # ユーザー情報の設定
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 変更があればコミット＆プッシュ
+          git add feed.xml
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update RSS feed $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
+        env:
+          # プッシュ用のトークン
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
