@@ -9,7 +9,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 07 Sep 2026 15:08:11 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 15:01:44 +0800</lastBuildDate>
     <item>
       <title>【中国】【特許】【重要裁判例シリーズ】10　使用環境特徴と機能的特徴の認定が争点となった事例</title>
       <link>https://www.tmi.gr.jp/eyes/blog/2024/15723.html</link>
@@ -443,21 +443,21 @@
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0800</pubDate>
     </item>
     <item>
-      <title>TMI中国最新法令情報-（2026年8月号）-</title>
-      <link>https://www.tmi.gr.jp/eyes/newsletter/2026/18752.html</link>
-      <description>TMI中国最新法令情報-（2026年8月号）-</description>
-      <guid isPermaLink="true">https://www.tmi.gr.jp/eyes/newsletter/2026/18752.html</guid>
-      <category>ニューズレター</category>
-      <enclosure url="https://www.tmi.gr.jp/uploads/2022/05/13/TMI_BJ_square%20-thumb.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
-    </item>
-    <item>
       <title>中国最新法令情報</title>
       <link>https://www.tmi.gr.jp/eyes/blog/2026/16696.html</link>
       <description>中国最新法令情報</description>
       <guid isPermaLink="true">https://www.tmi.gr.jp/eyes/blog/2026/16696.html</guid>
       <category>ブログ</category>
       <enclosure url="https://www.tmi.gr.jp/uploads/2025/12/18/China_thumb.png" length="0" type="image/jpeg"/>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
+    </item>
+    <item>
+      <title>TMI中国最新法令情報-（2026年8月号）-</title>
+      <link>https://www.tmi.gr.jp/eyes/newsletter/2026/18752.html</link>
+      <description>TMI中国最新法令情報-（2026年8月号）-</description>
+      <guid isPermaLink="true">https://www.tmi.gr.jp/eyes/newsletter/2026/18752.html</guid>
+      <category>ニューズレター</category>
+      <enclosure url="https://www.tmi.gr.jp/uploads/2022/05/13/TMI_BJ_square%20-thumb.jpg" length="0" type="image/jpeg"/>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
     </item>
   </channel>
