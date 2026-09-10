@@ -2,8 +2,8 @@ name: Generate RSS Feed
 
 on:
   schedule:
-    # 中国時間 13:30 = UTC 5:30（中国はUTC+8）
-    - cron: '30 5 * * 1'
+    # 毎週金曜日 中国時間 13:30 = UTC 5:30（中国はUTC+8）
+    - cron: '30 5 * * 5'
   workflow_dispatch:  # 手動実行も可能に
 
 # 権限の設定（重要！）
